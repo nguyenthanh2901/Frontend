@@ -1,0 +1,281 @@
+.header {
+    
+
+
+    &-1st {
+        // height: 7.2rem;
+        background-color: @color-dark-1;
+        // display: flex;
+        // align-items: center;
+        .reponds(tab-port,{
+            display:none;
+        });
+        & > .container{
+            height: 7.2rem;
+            .display(flex);
+            .align-items(center);
+            .justify-content(space-between);
+        }
+    }
+
+    &-contact {
+        // height: 3.2rem;
+        .display(flex);
+        
+        .align-items(center);
+
+        &:not(:last-child){
+            margin-right: 2.2rem;
+        }
+
+        & > span {
+            color: @color-grey-dark;
+        }
+
+        &__icon{
+            color: @color-primary;
+            text-align: center;
+            font-size: 1.6rem;
+            width: 3.2rem;
+            height: 3.2rem;
+            margin-right: 10px;
+            border: solid .1px @color-primary;
+            line-height: 3.2rem;
+        }
+
+        &__des{
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+
+
+        & > span {
+            font-size: 1.2rem;
+        }
+
+    }
+
+
+    &-translate-icon {
+        max-width: 1.7rem;
+        max-height: 1.1rem;
+        margin-right: 1rem;
+    }
+
+
+
+
+
+    &-2st{
+        background-color: @color-white;
+        & > .container{
+            .display(flex);
+            .align-items(center);
+            .justify-content(space-between);
+            height: 100px;
+            & > img {
+                height: 46px;
+            }
+            .reponds(tab-port,{
+                display: none;
+            });
+        }
+    }
+
+    &-3st {
+        background-color: @color-primary;
+        .reponds(tab-port,{
+            display: none;
+        });
+
+        & > .container {
+            height: 5rem;
+            .display(flex);
+            .align-items(center);
+            .justify-content(space-between);
+        }
+    }
+}
+
+
+
+.seach {
+    max-width: 55.5rem;
+    width: 100%;
+    height: 4rem;
+    .display(flex);
+    .align-items(center);
+    padding-left: 2rem;
+    border: 1px solid @color-grey-dark-1;
+    border-radius: 100px;
+    position: relative;
+
+
+    .reponds(tab-port,{
+        max-width: unset;
+    });
+        &::after {
+            content: "";
+            width: .15rem;
+            height: 2.5rem;
+            background-color: @color-grey-dark-1;
+            display: inline-block;
+            position: absolute;
+            top: 50%;
+            left: 28%;
+            .transform(translate(-50%,-50%));
+            // z-index: 100;
+            .reponds(tab-port,{
+                left: 25%;
+            });
+        }
+    &__option{
+        width: 11rem;
+        height: 100%;
+        background-color: @color-white;
+        outline: none;
+        border: none;
+        margin-right: 4rem;  
+        // .reponds(tab-port,{
+        //     width: 100px;
+        //     margin-right: 0;  
+        // });
+        // .reponds(phone,{
+        //     width: 40px;
+        // });
+    }
+
+    &__input{
+        width: 37rem;
+        height: 100%;
+        background-color: @color-white;
+        outline: none;
+        border: none;
+        // .reponds(tab-port,{
+        //     width: 300px;
+        // });
+        // .reponds(phone,{
+        //     width: 100px;
+        // });
+    }
+
+    &__button{
+        width: 6rem;
+        height: 100%;
+        background-color: @color-primary;
+        outline: none;
+        border: none;
+        // border: 1px solid @color-grey-dark-1;
+        border-radius:0 100px 100px 0;
+        background-clip: padding-box;
+        transition: transform 0.3s;
+        &:active{
+            .transform(translateY(1px));
+        }
+
+        & > i {
+            color: @color-white;
+            font-size: 1.8rem;
+        }
+    }
+}
+
+.setting-icon {
+    height: 4rem;
+    // display: flex;
+
+    & > i {
+        line-height: 4rem;
+        color: @color-primary;
+        font-size: 2.7rem;
+        margin-left: 1.8rem;
+        cursor: pointer;
+    }
+}
+
+.cat-menu{
+
+
+    &__right{
+        list-style-type: none;
+
+        & > li{
+            font-size: 1.4rem;
+            display: inline-block;
+            text-transform: uppercase;
+            font-weight: 600;
+            cursor: pointer;
+            &:not(:last-child){
+                margin-right: 53px;
+            }
+            & > a {
+                text-decoration: none;
+                color: @color-white;
+            }
+            &:hover > a {
+                text-shadow: .1rem .1rem rgba(@color-white,.8);
+            }
+        }
+    }
+
+    &__left{
+        list-style-type: none;
+        .display(flex);
+        align-items: center;
+        & > li{
+            font-size: 1.4rem;
+            display: inline-block;
+            text-transform: uppercase;
+            font-weight: 600;
+            cursor: pointer;
+            position: relative;
+            & > a {
+                text-decoration: none;
+                color: @color-white;
+            }
+            &:not(:last-child){
+                margin-right: 3rem;
+            }
+            &:first-child{
+                width: 2rem;
+                height: .15rem;
+                background-color: @color-white;
+                
+                &::before,
+                &::after{
+                    width: 3rem;
+                    height: .15rem;
+                    background-color: @color-white;
+                    display: inline-block;
+                }
+                &::before,
+                &::after{
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    transition: all .2s;
+                }
+
+                &::before{
+                    top: -1rem;
+                }
+                &::after{
+                    top: 1rem;
+                }
+            }
+        }
+    }
+}
+
+// .menu-icon {
+//     width: 2rem;
+//     height: .15rem;
+//     background-color: @color-white;
+// }
+
+
+.flex-reverse{
+    .reponds(tab-port,{
+        flex-direction: row;
+    })
+}

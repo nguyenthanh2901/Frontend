@@ -1,0 +1,75 @@
+$xs: 0;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1400px;
+$fhd: 1720px; // the true 1920px, but equal to container-big
+
+@mixin at-sm {
+  @media screen and (min-width: #{$sm}) {
+    @content;
+  }
+}
+
+@mixin at-md {
+  @media screen and (min-width: #{$md}) {
+    @content;
+  }
+}
+
+@mixin at-lg {
+  @media screen and (min-width: #{$lg}) {
+    @content;
+  }
+}
+
+@mixin at-xl {
+  @media screen and (min-width: #{$xl}) {
+    @content;
+  }
+}
+
+@mixin at-xxl {
+  @media screen and (min-width: #{$xxl}) {
+    @content;
+  }
+}
+
+@mixin at-fhd {
+  @media screen and (min-width: #{$fhd}) {
+    @content;
+  }
+}
+
+//
+
+@mixin at-max-sm {
+  @media screen and (max-width: #{$sm - 1px}) {
+    @content;
+  }
+}
+
+@mixin at-max-md {
+  @media screen and (max-width: #{$md - 1px}) {
+    @content;
+  }
+}
+
+@mixin at-max-lg {
+  @media screen and (max-width: #{$lg - 1px}) {
+    @content;
+  }
+}
+
+@mixin at-max-xl {
+  @media screen and (max-width: #{$xl - 1px}) {
+    @content;
+  }
+}
+
+@mixin at-max-xxl {
+  @media screen and (max-width: #{$xxl - 1px}) {
+    @content;
+  }
+}

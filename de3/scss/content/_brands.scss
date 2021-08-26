@@ -1,0 +1,23 @@
+.brands {
+  min-height: 200px;
+  display: flex;
+  .brands__list {
+    margin-top: -15px;
+    row-gap: 0px; // override row-gap of class 'row'
+    .brand {
+      padding: 10px;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        max-width: 100%;
+        opacity: 0.3;
+        transition: all 0.3s;
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

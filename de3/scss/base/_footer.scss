@@ -1,0 +1,145 @@
+.footer {
+  background-color: $color-1;
+  &__group-1 {
+    display: flex;
+    padding: 30px 0;
+    min-height: 250px;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    flex-direction: column;
+    & > *:not(:last-child) {
+      margin-right: 0px;
+      @include at-xl {
+        margin-right: 30px;
+      }
+    }
+    @include at-xl {
+      flex-direction: row;
+    }
+    .logo-container {
+      margin-bottom: 15px;
+      flex: 1;
+      @include at-xl {
+        margin-top: 7px;
+      }
+    }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 0px;
+      justify-content: center;
+      @include at-xl {
+        margin-top: 75px;
+        justify-content: flex-start;
+      }
+      flex: 2.25;
+      .link {
+        &:not(:last-of-type) {
+          margin-right: 33px;
+        }
+        a {
+          text-decoration: none;
+          font-size: 14px;
+          font-family: 'FiraSans-Bold';
+          color: $color-2;
+          font-weight: bold;
+          text-transform: uppercase;
+          line-height: 1.714;
+          letter-spacing: 0.1em;
+          transition: all 0.3s;
+          &:hover {
+            color: $color-3;
+          }
+        }
+      }
+    }
+    .subscribe {
+      height: 40px;
+      margin-top: 0px;
+      @include at-xl {
+        margin-top: 75px;
+      }
+      padding: 0 18px;
+      border: 2px solid #696969;
+      font-size: 14px;
+      text-decoration: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'FiraSans-Bold';
+      color: $color-2;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      & > *:not(:last-child) {
+        margin-right: 11px;
+      }
+    }
+  }
+  .line {
+    border-bottom: 1px solid #2b2b2b;
+  }
+  .copy-right,
+  .address {
+    margin-top: 40px;
+    font-size: 14px;
+    font-family: 'FiraSans';
+    color: $color-4;
+    line-height: 2;
+    text-align: left;
+    letter-spacing: 0;
+  }
+  .socials {
+    display: flex;
+    margin-top: 30px;
+    margin-right: 1px;
+    flex-wrap: wrap;
+    row-gap: 9px;
+    a.social {
+      display: flex;
+      width: 48px;
+      height: 48px;
+      justify-content: center;
+      align-items: center;
+      border: 2px solid #4e4e4e;
+      border-radius: 50%;
+      text-decoration: none;
+      transition: all 0.3s;
+      &:not(:last-of-type) {
+        margin-right: 9px;
+      }
+      i {
+        font-size: 16px;
+        transition: all 0.3s;
+        color: $color-2;
+      }
+      &:hover {
+        background-color: $color-3;
+        border-color: $color-3;
+      }
+      &:hover i {
+        color: $color-1;
+      }
+    }
+  }
+  &__group-2 {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    & > *:not(:last-child) {
+      margin-right: 30px;
+    }
+    @include at-xl {
+      flex-direction: row;
+      justify-content: space-between;
+      min-height: 170px;
+    }
+  }
+  &__group-3 {
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: flex-end;
+  }
+}

@@ -1,0 +1,24 @@
+.button {
+  background-color: $color-1;
+  padding: 15px 29px;
+  text-decoration: none;
+  display: inline-block;
+
+  // text
+  font-size: 10px;
+  font-family: 'FiraSans-Bold';
+  color: $color-white;
+  font-weight: bold;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+
+  @include at-sm {
+    font-size: 12px;
+  }
+  @include at-lg {
+    font-size: 14px;
+  }
+  @include at-xxl {
+    font-size: 16px;
+  }
+}

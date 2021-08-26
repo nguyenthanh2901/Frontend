@@ -1,0 +1,106 @@
+.product.grid.wide {
+  margin-top: 71px;
+  .product__border {
+    border-bottom: 1px solid @rgbwhite;
+  }
+  .product__menu {
+    font-size: @fontSize18;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.333;
+    opacity: 1;
+    .flex-display();
+    & .actived {
+      color: @colorRedActive;
+      border-bottom: 1px solid @colorRedActive;
+    }
+    & li {
+      padding: 25px 17px;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: all .25s;
+      padding-bottom: 13px;
+      &:hover {
+        opacity: .6;
+      }
+    }
+  }
+  .product__container {
+    margin-top: 36px;
+    &--items {
+      
+      cursor: pointer;
+      transition: all .25s;
+      border: 1px solid @rgbwhite;
+      margin-bottom: 47px;
+      text-align: center;
+      &-div-hover {
+        height: 329px;
+        position: relative;
+        border: 1px solid transparent;
+        & img {
+          width: 100%;
+          max-width: 270px;
+        }
+      }
+      
+      & .cart {
+        position: absolute;
+        .flex-display();
+
+        opacity: 0;
+        .flex-direction(column);
+        text-align: center;
+        top: 12%;
+        right: 7%;
+        transform: translate(-10%, -10%);
+        z-index: 2;
+        transition: all .3s;
+
+        &-items {
+          border: 1px solid @gray;
+          width: 35px;
+          height: 35px;
+          margin-bottom: 14px;
+          .full-center(center);
+          text-align: center;
+          border-radius: 10px 0 10px 0;
+          .flex-display();
+
+          transition: all .3s;
+        }
+        .cart-items:hover {
+          border: none;
+          background-color: @colorRed;
+        }
+        .cart-items:hover path {
+          color: @rgbwhite;
+        }
+      }
+      .fa-shopping-basket path,
+      .fa-eye path,
+      .fa-heart path,
+      .fa-exchange-alt path {
+        color: @gray;
+      }
+      .fa-shopping-basket,
+      .fa-eye,
+      .fa-heart,
+      .fa-exchange-alt {
+        font-size: @fontSize14;
+      }
+    }
+
+    .container__title {
+      font-size: @fontSize14;
+      margin-top: 20px;
+      margin-left: 28px;
+      line-height: 1.714;
+    }
+    .container__price {
+      margin-top: 3px;
+      margin-left: 28px;
+      font-size: @fontSize14;
+    }
+  }
+}

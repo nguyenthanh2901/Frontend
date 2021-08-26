@@ -1,0 +1,33 @@
+.header {
+  position: absolute;
+  width: 100%;
+  overflow-x: hidden;
+  &__menu {
+    padding-top: 29px;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    .logo {
+      margin-left: 15px;
+      @include at-fhd {
+        margin-left: 0;
+      }
+    }
+    .menu__right {
+      display: flex;
+      align-items: center;
+      margin-right: 11px;
+      margin-top: -2px;
+      &__item {
+        position: relative;
+        &:not(:last-of-type) {
+          margin-right: 30px;
+          @include at-xxl {
+            margin-left: 0;
+            margin-right: 50px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,60 @@
+.hidden-sm {
+  @include at-sm {
+    display: none !important;
+  }
+}
+
+.hidden-md {
+  @include at-md {
+    display: none !important;
+  }
+}
+
+.hidden-lg {
+  @include at-lg {
+    display: none !important;
+  }
+}
+
+.hidden-xl {
+  @include at-xl {
+    display: none !important;
+  }
+}
+
+.hidden-xxl {
+  @include at-xxl {
+    display: none !important;
+  }
+}
+
+// max hidden
+.hidden-max-sm {
+  @include at-max-sm {
+    display: none !important;
+  }
+}
+
+.hidden-max-md {
+  @include at-max-md {
+    display: none !important;
+  }
+}
+
+.hidden-max-lg {
+  @include at-max-lg {
+    display: none !important;
+  }
+}
+
+.hidden-max-xl {
+  @include at-max-xl {
+    display: none !important;
+  }
+}
+
+.hidden-max-xxl {
+  @include at-max-xxl {
+    display: none !important;
+  }
+}

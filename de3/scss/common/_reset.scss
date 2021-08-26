@@ -1,0 +1,57 @@
+@font-face {
+  font-family: 'FiraSans';
+  src: url(fonts/Fira_Sans/FiraSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'FiraSans-Bold';
+  src: url(fonts/Fira_Sans/FiraSans-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'CormorantGaramond';
+  src: url(fonts/Cormorant_Garamond/CormorantGaramond-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'CormorantGaramond-Medium';
+  src: url(fonts/Cormorant_Garamond/CormorantGaramond-Medium.ttf);
+}
+
+@font-face {
+  font-family: 'CormorantGaramond-Bold';
+  src: url(fonts/Cormorant_Garamond/CormorantGaramond-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'CormorantGaramond-SemiBold';
+  src: url(fonts/Cormorant_Garamond/CormorantGaramond-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: 'CormorantGaramond-SemiBoldItalic';
+  src: url(fonts/Cormorant_Garamond/CormorantGaramond-SemiBoldItalic.ttf);
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* line-height: 3rem; */
+}
+
+body {
+  // font-size: 62.5%;
+  font-family: 'CormorantGaramond', serif;
+}
+
+li {
+  list-style-type: none;
+}
+
+img {
+  cursor: pointer;
+  vertical-align: middle;
+}

@@ -1,0 +1,55 @@
+.client-say {
+  height: 535px;
+  &-siema {
+    overflow: hidden;
+  }
+  &__slider {
+    margin-top: 56px;
+
+    .slider-client-say {
+      cursor: pointer;
+      color: @colorBlack;
+      .client-say__title {
+        font-size: 36px;
+        color: @colorBlack;
+        font-weight: bold;
+        line-height: .833;
+        margin-bottom: 54px;
+      }
+
+      .client-say__avatar .avatar {
+        margin: 0 auto;
+        width: 100% ;
+        max-width: 7%;
+        border-radius: 50%;
+        background-color: @colorBlack;
+      }
+
+      .client-say__content {
+        padding: 24px 0;
+        font-size: @fontSize18;
+        max-width: 791px;
+        color: @gray;
+        line-height: 1.667;
+        margin: 0 auto;
+      }
+      .client-say__name {
+        font-size: @fontSize18;
+        color: @colorBlack;
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 1.667;
+        margin-bottom: 2px;
+      }
+      .client-say__rate {
+        margin-top: 7px;
+        font-size: @fontSize14;
+      }
+      .client-say__slider {
+        .owl-dots.active span {
+          color: @colorRed;
+        }
+      }
+    }
+  }
+}

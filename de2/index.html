@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script src="https://kit.fontawesome.com/f31279db3e.js" crossorigin="anonymous"></script>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="css/styles.css"/>
+    <title>Document</title>
+    
+</head>
+<body>
+    <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+
+        <label for="navi-toggle" class="navigation__button cusor">
+            <span class="navigation__icon">&nbsp;</span>
+        </label>
+        <div class="navigation__background">&nbsp;</div>
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__item"><a href="" class="navigation__link"><span>01 </span>Home</a></li>
+                <li class="navigation__item"><a href="" class="navigation__link"><span>02 </span>About</a></li>
+                <li class="navigation__item"><a href="" class="navigation__link"><span>03 </span>Service</a></li>
+                <li class="navigation__item"><a href="" class="navigation__link"><span>04 </span>Blog</a></li>
+                <li class="navigation__item"><a href="" class="navigation__link"><span>05 </span>Page</a></li>
+                <li class="navigation__item"><a href="" class="navigation__link"><span>05 </span>Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="navigation1">
+        <input type="checkbox" class="navigation1__checkbox" id="navi-toggle1">
+
+        <label for="navi-toggle1" class="navigation1__button cusor">
+            <span class="navigation1__icon">&nbsp;</span>
+        </label>
+        <div class="navigation1__background">&nbsp;</div>
+        <nav class="navigation1__nav">
+            <div class="navigation1__img">
+                <a href="#">
+                    <img src="css/icon/Logo.png" alt="" class="cusor">
+                </a>
+            </div>
+            <div class="navigation1__search flex-r">
+                <select id="navigation1__search-op" class="navigation1__search-op">
+                    <option value="0" selected>All Category</option>
+                    <option value="1">Saab</option>
+                    <option value="2">VW</option>
+                    <option value="3">Audi</option>
+                  </select>
+                <input id="navigation1__search-in" type="text" class="navigation1__search-in" placeholder="Seach for Product...">
+                <button class="navigation1__search-bt cusor"><i class="fa fa-search"></i></button>
+            </div>
+
+
+
+            <ul class="navigation1__list">
+                <li class="navigation1__item"><a href="" class="navigation1__link"><span>01 </span>Categories</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="navi-shop">
+        <i class="fas fa-shopping-cart"  id="shopcard"></i>
+    </div>
+    <div class="navi-set">
+        <i class="fas fa-cog"></i>
+    </div>
+    <header class="header">
+        <div class="header-1st">
+            <div class="container">
+                <div class="flex">
+                    <div class="header-contact">
+                        <i class="fas fa-map-marker-alt header-contact__icon"></i>
+                        <div class="header-contact__des">
+                            <p class="color--grey">Find us</p>
+                            <p>325 admiral unit ,North cost ,USD</p>
+                        </div>
+                    </div>
+                    <div class="header-contact">
+                        <i class="fas fa-envelope header-contact__icon"></i>
+                        <div class="header-contact__des">
+                            <p class="color--grey">Email us</p>
+                            <p>admin@medyplus.com</p>
+                        </div>
+                    </div>
+                    <div class="header-contact">
+                        <i class="fa fa-phone header-contact__icon"></i>
+                        <div class="header-contact__des">
+                            <p class="color--grey">Call Us Now</p>
+                            <p>002 - 0100 843 1112</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row center-bet reset-mar">
+                    <div class="header-contact">
+                        <img class="header-translate-icon" src="css/icon/united-states.png" alt=""  />
+                        <span>English</span>          
+                    </div>
+                    <div class="header-contact">
+                        <span> &or;</span>
+                    </div>
+                </div> 
+            </div>
+        </div>
+        <div class="header-2st">
+            <div class="container">
+                <a href="#">
+                    <img src="css/icon/Logo.png" alt="" class="cusor">
+                </a>
+                <div class="flex flex-reverse">
+                    <div class="seach">
+                        <select id="seach__option" class="seach__option">
+                            <option value="0" selected>All Category</option>
+                            <option value="1">Saab</option>
+                            <option value="2">VW</option>
+                            <option value="3">Audi</option>
+                          </select>
+                        <input id="seach__input" type="text" class="seach__input" placeholder="Seach for Product...">
+                        <button class="seach__button cusor"><i class="fa fa-search"></i></button>
+                    </div>
+                    <div class="setting-icon">
+                        <i class="fas fa-cog"></i>
+                        <i class="fas fa-shopping-cart" id="shopcard1"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-3st">
+            <div class="container">
+                <ul class="cat-menu__left">
+                    <li></li>
+                    <li><a href="#">Categories</a></li>
+                </ul>
+                <ul class="cat-menu__right">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Page</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main class="">
+        <div class="m">
+            <div class="slider__prev cusor">&lt;</div>
+            <div class="slider__next cusor">&gt;</div>
+            <div class="mn">
+                <div class="slider">
+                    <div class="container posi">
+                        <div class="heading">
+                            <p class="heading-1">
+                                Find Any <span>Medicine</span>
+                                <br>
+                                You Need!
+                            </p>
+                            <p class="heading-2">
+                                Free Standard Shipping Everyday
+                            </p>
+                            <a href="#" class="heading__link">
+                                Shop Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider">
+                    <div class="container posi">
+                        <div class="heading">
+                            <p class="heading-1">
+                                Find Any <span>Medicine</span>
+                                <br>
+                                You Need!
+                            </p>
+                            <p class="heading-2">
+                                Free Standard Shipping Everyday
+                            </p>
+                            <a href="#" class="heading__link">
+                                Shop Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container flex-r">
+                <div class="section-vervice">
+                    <i class="fas fa-shopping-cart section-vervice__icon"></i>
+                    <div class="section-vervice__des">
+                        <p class="color--grey">Free Shipping</p>
+                        <p class="color--grey">Free shipping for all US order</p>
+                    </div>
+                </div>
+                <div class="section-vervice">
+                    <i class="fas fa-headphones-alt section-vervice__icon"></i>
+                    <div class="section-vervice__des">
+                        <p class="color--grey">Support 24/7</p>
+                        <p class="color--grey">We support 24 hour a day</p>
+                    </div>
+                </div>
+                <div class="section-vervice">
+                    <i class="fas fa-archive section-vervice__icon"></i>
+                    <div class="section-vervice__des">
+                        <p class="color--grey">30 Day Returns</p>
+                        <p class="color--grey">you have 30 days to return</p>
+                    </div>
+                </div>
+                <div class="section-vervice">
+                    <i class="fas fa-credit-card section-vervice__icon"></i>
+                    <div class="section-vervice__des">
+                        <p class="color--grey">Secure Payment</p>
+                        <p class="color--grey">100% Secure & Sale</p>
+                    </div>
+                </div>
+        </div>
+        <div class="container">
+            <div class="row g">
+                <div class="col l-7 m-12 c-12">
+                    <div class="section-sale--left__content">
+                        <div class="content-sale">
+                            <div class="content-sale__date">
+                                <div class="content-sale__date--item"><p><span id="d">230</span> DAYS</p></div>
+                                <div class="content-sale__date--item"><p><span id="h">24 </span>HRS</p></div>
+                                <div class="content-sale__date--item"><p><span id='m'>40 </span>MINS</p></div>
+                                <div class="content-sale__date--item"><p><span id='s'>60 </span>SEC</p></div>
+                            </div>
+                        </div>
+                        <p class="content-sale__tittle">
+                                BEAUTY & COSMETICS
+                            </p>
+                            <p class="content-sale__des">
+                                Sale up to <span>40%</span> off
+                            </p>
+                    </div>
+                </div>
+                <div class="col l-5 m-12 c-12">
+                    <div class="section-sale--right__content">
+                        <div class="section-sale--right__content--top m-12">
+                            <div class="ct-sale">
+                                <p>30%</p>
+                                <p>Discount</p>
+                                <p>For Dietary Supplement</p>
+                            </div>
+                        </div>
+                        <div class="section-sale--right__content--bot m-12">
+                            <div class="ctt-sale">
+                                <p>Accessories</p>
+                                <p>Sale up to <span>20%</span> off</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="section-sell">
+                <div class="section-sell__left">
+                    TOP SELLING
+                </div>
+                <div class="section-sell__right">
+                    <i class="fas fa-chevron-left prev"></i>
+                    <i class="fas fa-chevron-right next"></i>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row next-slider">
+                 <!-- ITEM -->
+                    <div class="card-product c-12 l-4 m-6 col">
+                        <div class="card-product__img">
+                            <div class="card-product__img-list-i">
+                                <i class="fas fa-shopping-cart"></i>
+                                <i class="far fa-heart"></i>
+                                <i class="fas fa-info"></i>
+                            </div>
+                            <a href="#"><img src="css/icon/1.png" alt=""></a>
+                        </div>
+                        <div class="card-product__content">
+                            <p>Natural Factors Vitamin C</p>
+                            <p>Blueberry Rasp</p>
+                            <p>$30.00</p>
+                        </div>
+                    </div>
+                    <div class="card-product c-12 l-4 m-6 col">
+                        <div class="card-product__img">
+                            <div class="card-product__img-list-i">
+                                <i class="fas fa-shopping-cart"></i>
+                                <i class="far fa-heart"></i>
+                                <i class="fas fa-info"></i>
+                            </div>
+                            <a href="#"><img src="css/icon/2.png" alt=""></a>
+                        </div>
+                        <div class="card-product__content">
+                            <p>Natural Factors Vitamin C</p>
+                            <p>Blueberry Rasp</p>
+                            <p>$30.00</p>
+                        </div>
+                    </div>
+                    <div class="card-product c-12 l-4 m-6 col">
+                        <div class="card-product__img">
+                            <div class="card-product__img-list-i">
+                                <i class="fas fa-shopping-cart"></i>
+                                <i class="far fa-heart"></i>
+                                <i class="fas fa-info"></i>
+                            </div>
+                            <a href="#"><img src="css/icon/3.png" alt=""></a>
+                        </div>
+                        <div class="card-product__content">
+                            <p>Natural Factors Vitamin C</p>
+                            <p>Blueberry Rasp</p>
+                            <p>$30.00</p>
+                        </div>
+                    </div>
+                    <div class="card-product c-12 l-4 m-6 col">
+                        <div class="card-product__img">
+                            <div class="card-product__img-list-i">
+                                <i class="fas fa-shopping-cart"></i>
+                                <i class="far fa-heart"></i>
+                                <i class="fas fa-info"></i>
+                            </div>
+                            <a href="#"><img src="css/icon/4.png" alt=""></a>
+                        </div>
+                        <div class="card-product__content">
+                            <p>Natural Factors Vitamin C</p>
+                            <p>Blueberry Rasp</p>
+                            <p>$30.00</p>
+                        </div>
+                    </div>
+                    <div class="card-product c-12 l-4 m-6 col">
+                        <div class="card-product__img">
+                            <div class="card-product__img-list-i">
+                                <i class="fas fa-shopping-cart"></i>
+                                <i class="far fa-heart"></i>
+                                <i class="fas fa-info"></i>
+                            </div>
+                            <a href="#"><img src="css/icon/5.png" alt=""></a>
+                        </div>
+                        <div class="card-product__content">
+                            <p>Natural Factors Vitamin C</p>
+                            <p>Blueberry Rasp</p>
+                            <p>$30.00</p>
+                        </div>
+                    </div>
+                    <div class="card-product c-12 l-4 m-6 col">
+                        <div class="card-product__img">
+                            <div class="card-product__img-list-i">
+                                <i class="fas fa-shopping-cart"></i>
+                                <i class="far fa-heart"></i>
+                                <i class="fas fa-info"></i>
+                            </div>
+                            <a href="#"><img src="css/icon/6.png" alt=""></a>
+                        </div>
+                        <div class="card-product__content">
+                            <p>Natural Factors Vitamin C</p>
+                            <p>Blueberry Rasp</p>
+                            <p>$30.00</p>
+                        </div>
+                    </div>
+                    <div class="card-product c-12 l-4 m-6 col">
+                        <div class="card-product__img">
+                            <div class="card-product__img-list-i">
+                                <i class="fas fa-shopping-cart"></i>
+                                <i class="far fa-heart"></i>
+                                <i class="fas fa-info"></i>
+                            </div>
+                            <a href="#"><img src="css/icon/7.png" alt=""></a>
+                        </div>
+                        <div class="card-product__content">
+                            <p>Natural Factors Vitamin C</p>
+                            <p>Blueberry Rasp</p>
+                            <p>$30.00</p>
+                        </div>
+                    </div>
+                    <div class="card-product c-12 l-4 m-6 col">
+                        <div class="card-product__img">
+                            <div class="card-product__img-list-i">
+                                <i class="fas fa-shopping-cart"></i>
+                                <i class="far fa-heart"></i>
+                                <i class="fas fa-info"></i>
+                            </div>
+                            <a href="#"><img src="css/icon/8.png" alt=""></a>
+                        </div>
+                        <div class="card-product__content">
+                            <p>Natural Factors Vitamin C</p>
+                            <p>Blueberry Rasp</p>
+                            <p>$30.00</p>
+                        </div>
+                    </div>
+                    <div class="card-product c-12 l-4 m-6 col">
+                        <div class="card-product__img">
+                            <div class="card-product__img-list-i">
+                                <i class="fas fa-shopping-cart"></i>
+                                <i class="far fa-heart"></i>
+                                <i class="fas fa-info"></i>
+                            </div>
+                            <a href="#"><img src="css/icon/1.png" alt=""></a>
+                        </div>
+                        <div class="card-product__content">
+                            <p>Natural Factors Vitamin C</p>
+                            <p>Blueberry Rasp</p>
+                            <p>$30.00</p>
+                        </div>
+                    </div>
+                    <div class="card-product c-12 l-4 m-6 col">
+                        <div class="card-product__img">
+                            <div class="card-product__img-list-i">
+                                <i class="fas fa-shopping-cart"></i>
+                                <i class="far fa-heart"></i>
+                                <i class="fas fa-info"></i>
+                            </div>
+                            <a href="#"><img src="css/icon/2.png" alt=""></a>
+                        </div>
+                        <div class="card-product__content">
+                            <p>Natural Factors Vitamin C</p>
+                            <p>Blueberry Rasp</p>
+                            <p>$30.00</p>
+                        </div>
+                    </div>
+                    <div class="card-product c-12 l-4 m-6 col">
+                        <div class="card-product__img">
+                            <div class="card-product__img-list-i">
+                                <i class="fas fa-shopping-cart"></i>
+                                <i class="far fa-heart"></i>
+                                <i class="fas fa-info"></i>
+                            </div>
+                            <a href="#"><img src="css/icon/3.png" alt=""></a>
+                        </div>
+                        <div class="card-product__content">
+                            <p>Natural Factors Vitamin C</p>
+                            <p>Blueberry Rasp</p>
+                            <p>$30.00</p>
+                        </div>
+                    </div>
+                    <div class="card-product c-12 l-4 m-6 col">
+                        <div class="card-product__img">
+                            <div class="card-product__img-list-i">
+                                <i class="fas fa-shopping-cart"></i>
+                                <i class="far fa-heart"></i>
+                                <i class="fas fa-info"></i>
+                            </div>
+                            <a href="#"><img src="css/icon/4.png" alt=""></a>
+                        </div>
+                        <div class="card-product__content">
+                            <p>Natural Factors Vitamin C</p>
+                            <p>Blueberry Rasp</p>
+                            <p>$30.00</p>
+                        </div>
+                    </div>
+                    <div class="card-product c-12 l-4 m-6 col">
+                        <div class="card-product__img">
+                            <div class="card-product__img-list-i">
+                                <i class="fas fa-shopping-cart"></i>
+                                <i class="far fa-heart"></i>
+                                <i class="fas fa-info"></i>
+                            </div>
+                            <a href="#"><img src="css/icon/5.png" alt=""></a>
+                        </div>
+                        <div class="card-product__content">
+                            <p>Natural Factors Vitamin C</p>
+                            <p>Blueberry Rasp</p>
+                            <p>$30.00</p>
+                        </div>
+                    </div>
+                    <div class="card-product c-12 l-4 m-6 col">
+                        <div class="card-product__img">
+                            <div class="card-product__img-list-i">
+                                <i class="fas fa-shopping-cart"></i>
+                                <i class="far fa-heart"></i>
+                                <i class="fas fa-info"></i>
+                            </div>
+                            <a href="#"><img src="css/icon/6.png" alt=""></a>
+                        </div>
+                        <div class="card-product__content">
+                            <p>Natural Factors Vitamin C</p>
+                            <p>Blueberry Rasp</p>
+                            <p>$30.00</p>
+                        </div>
+                    </div>
+                    <div class="card-product c-12 l-4 m-6 col">
+                        <div class="card-product__img">
+                            <div class="card-product__img-list-i">
+                                <i class="fas fa-shopping-cart"></i>
+                                <i class="far fa-heart"></i>
+                                <i class="fas fa-info"></i>
+                            </div>
+                            <a href="#"><img src="css/icon/7.png" alt=""></a>
+                        </div>
+                        <div class="card-product__content">
+                            <p>Natural Factors Vitamin C</p>
+                            <p>Blueberry Rasp</p>
+                            <p>$30.00</p>
+                        </div>
+                    </div>
+                    <div class="card-product c-12 l-4 m-6 col">
+                        <div class="card-product__img">
+                            <div class="card-product__img-list-i">
+                                <i class="fas fa-shopping-cart"></i>
+                                <i class="far fa-heart"></i>
+                                <i class="fas fa-info"></i>
+                            </div>
+                            <a href="#"><img src="css/icon/8.png" alt=""></a>
+                        </div>
+                        <div class="card-product__content">
+                            <p>Natural Factors Vitamin C</p>
+                            <p>Blueberry Rasp</p>
+                            <p>$30.00</p>
+                        </div>
+                    </div>
+                    <!-- ITEM -->
+            </div>
+        </div>
+        <div class="section-new">
+            <h3 class="heading-3st">
+                LATEST NEWS
+            </h3>
+            <div class="container">
+                <div class="section-new__content row">
+                        <div class="card-item c-12 l-4 col">
+                            <a href="#">
+                                <div class="card-item__img">
+                                    <img src="css/icon/a.png" alt="">
+                                </div>
+                                <div class="card-item__detail">
+                                    <p class="card-item__detail--tittle">
+                                        Probiotics may help battle antibiotic
+                                        resistance Probiotics may help
+                                    </p>
+                                    <p class="card-item__detail--des">
+                                        14 June 2018 by <span class="color--primary">Admin</span>
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card-item c-12 l-4 col">
+                            <a href="#">
+                                <div class="card-item__img">
+                                    <img src="css/icon/a1.png" alt="">
+                                </div>
+                                <div class="card-item__detail">
+                                    <p class="card-item__detail--tittle">
+                                        Probiotics may help battle antibiotic
+                                        resistance Probiotics may help
+                                    </p>
+                                    <p class="card-item__detail--des">
+                                        14 June 2018 by <span class="color--primary">Admin</span>
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card-item c-12 l-4 col">
+                            <a href="#">
+                                <div class="card-item__img">
+                                    <img src="css/icon/a2.png" alt="">
+                                </div>
+                                <div class="card-item__detail">
+                                    <p class="card-item__detail--tittle">
+                                        Probiotics may help battle antibiotic
+                                        resistance Probiotics may help
+                                    </p>
+                                    <p class="card-item__detail--des">
+                                        14 June 2018 by <span class="color--primary">Admin</span>
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+
+        
+        <div class="section-sign">
+            <div class="section-sign__tittle">
+                <p class="section-sign__tittle--big">
+                    Keep Updated & Get Unlimited Discount
+                </p>
+                <p class="section-sign__tittle--small">
+                    Sign up for our newsletter to receive updates and exclusive offers
+                </p>
+            </div>
+            <div class="section-sign__form">
+                <input type="text" class="section-sign__form--input" placeholder="Enter your email address here">
+                <button class="section-sign__form--btn cusor">SIGN UP</button>
+            </div>
+        </div>
+        <div class="section-logo">
+                <div class="container section-logo__content">
+                    <div class="list-logo">
+                        <div class="logo" >
+
+                        </div>
+                        <div class="logo">
+
+                        </div>
+                        <div class="logo">
+
+                        </div>
+                        <div class="logo">
+
+                        </div>
+                        <div class="logo">
+
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-1st">
+            <div class="container">
+                <div class="row g">
+                    <div class="footer-1st__item l-4 m-6 c-6 col">
+                        <h6 class="footer-1st__item--tittle">CONTACT US</h6>
+                        <ul class="footer-1st__item--ul">
+                            <li class="footer-1st__item--li">
+                                <a href="#">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    Lorem Ipsum has been the industry's standard 
+                                </a>
+                            </li>
+                            <li class="footer-1st__item--li">
+                                <a href="#">
+                                    <i class="fas fa-envelope"></i>
+                                    contact@medic.com
+                                </a>
+                                
+                            </li>
+                            <li class="footer-1st__item--li">
+                                <a href="#">
+                                    <i class="fas fa-mobile-alt"></i>
+                                    +84 (1) 234 567 891
+                                </a>
+                            </li>
+                            <li class="footer-1st__item--li">
+                                <a href="#">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-google"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-1st__item l-3 m-6 c-6 col">
+                        <h6 class="footer-1st__item--tittle">COMPANY</h6>
+                        <ul class="footer-1st__item--ul">
+                            <li class="footer-1st__item--li">
+                                <a href="#">About Us</a>
+                            </li>
+                            <li class="footer-1st__item--li">
+                                <a href="#">Team Member</a>
+                            </li>
+                            <li class="footer-1st__item--li">
+                                <a href="#">Contact</a>
+                            </li>
+                            <li class="footer-1st__item--li">
+                                <a href="#">Carrer</a>
+                            </li>
+                            <li class="footer-1st__item--li">
+                                <a href="#">Alffilate</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-1st__item l-3 m-6 c-6 col">
+                        <h6 class="footer-1st__item--tittle">Categories</h6>
+                        <ul class="footer-1st__item--ul">
+                            <li class="footer-1st__item--li">
+                                <a href="#">Home medicine</a>
+                            </li>
+                            <li class="footer-1st__item--li">
+                                <a href="#">Baby & Child</a>
+                            </li>
+                            <li class="footer-1st__item--li">
+                                <a href="#">Diet & Nutrition</a>
+                            </li>
+                            <li class="footer-1st__item--li">
+                                <a href="#">Beauty</a>
+                            </li>
+                            <li class="footer-1st__item--li">
+                                <a href="#">Fitness & vitamins</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-1st__item l-2 m-6 c-6 col">
+                        <h6 class="footer-1st__item--tittle">Quick Links</h6>
+                        <ul class="footer-1st__item--ul">
+                            <li class="footer-1st__item--li">
+                                <a href="#">My Account</a>
+                            </li>
+                            <li class="footer-1st__item--li">
+                                <a href="#">Store Location</a>
+                            </li>
+                            <li class="footer-1st__item--li">
+                                <a href="#">Orders Tracking</a>
+                            </li>
+                            <li class="footer-1st__item--li">
+                                <a href="#">Carrer</a>
+                            </li>
+                            <li class="footer-1st__item--li">
+                                <a href="#">FAQs</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-2st">
+            <div class="container">
+                <div class="footer-2st-content">
+                    <div class="f2-l">
+                        <p class="st">@2018 Design by <span class="color--primary">Creative Wp</span>. All Rights Reserved. </p>
+                    </div>
+                    <div class="f2-r">
+                        <img src="css/icon/ft.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+     <script>
+        $('.next-slider').slick({
+            dots: false,
+            infinite: true,
+            speed: 300,
+            rows: 2,
+            slidesPerRow: 4,
+            prevArrow: $('.prev'),
+            nextArrow: $('.next'),
+            responsive: [
+                        {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesPerRow: 2,
+                            infinite: true,
+                            dots: false
+                        }
+                        },
+                        {
+                        breakpoint: 600,
+                        settings: {
+                            slidesPerRow: 2
+                        }
+                        },
+                        {
+                        breakpoint: 480,
+                        settings: {
+                            slidesPerRow: 1
+                        }
+                        }
+                ]             
+});
+
+
+            $('.mn').slick({
+            dots: false,
+            infinite: true,
+            speed: 800,
+            slidesToShow: 1,
+            adaptiveHeight: true,
+            prevArrow:'.slider__prev',
+            nextArrow:'.slider__next'
+            });
+	
+    </script> 
+    <script src="js/main.js"></script>
+</body>
+</html>

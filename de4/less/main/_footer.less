@@ -1,0 +1,114 @@
+.footer {
+  background-color: @colorFooter;
+  &__slogan {
+    .flex-display();
+    .flex-direction(column);
+    .flex-justify(center);
+    text-align: center;
+    height: 352px;
+
+    margin: 0 auto;
+    &--logo {
+      margin-top: 64px;
+    }
+    &--content {
+      max-width: 748px;
+      font-size: @fontSize14;
+      color: @gray;
+      line-height: 1.714;
+      font-size: @fontSize14;
+      padding: 25px 0;
+      margin: 0 auto;
+    }
+    &--nav {
+      .nav--item:hover .fa-facebook-f path,
+      .nav--item:hover .fa-twitter path,
+      .nav--item:hover .fa-google-plus-g path,
+      .nav--item:hover .fa-youtube path {
+        opacity: .5;
+      }
+
+      .fa-facebook-f path,
+      .fa-twitter path,
+      .fa-google-plus-g path,
+      .fa-youtube path {
+        color: @gray;
+      }
+      .fa-facebook-f,
+      .fa-twitter,
+      .fa-google-plus-g,
+      .fa-youtube {
+        line-height: 1.667;
+        font-size: @fontSize18;
+      }
+      justify-content: center;
+      .nav--item {
+        margin: 14px 15px;
+        font-size: @fontSize18;
+        padding-left: 14px;
+      }
+    }
+  }
+  &__info {
+    border-top: 1px solid @borderTopFooter;
+
+    & .row {
+      padding-top: 70px;
+      row-gap: 30px;
+    }
+    &--nav {
+      font-size: @fontSize18;
+      color: @rgbwhite;
+      text-transform: uppercase;
+      line-height: 1.667;
+      &--title {
+        font-weight: bold;
+        padding-bottom: 22px;
+      }
+
+      &--item {
+        padding-bottom: 5px;
+      }
+      .footer__info--nav--item .test a{
+        text-decoration: none ;
+        font-weight: 400;
+        font-size: @fontSize14;
+        color: @gray;
+        line-height: 2.5;
+        margin: 14px 0;
+        text-transform: none;
+        &:hover {
+          opacity: .5;
+        }
+      }
+      .footer__info--nav--item .fa-map-marker-alt path,
+      .fa-phone path,
+      .fa-envelope path,
+      .fa-clock path {
+        color: @gray;
+      }
+      .footer__info--nav--item .fa-map-marker-alt,
+      .fa-phone,
+      .fa-envelope,
+      .fa-clock {
+        width: 14px;
+        margin-right: 11px;
+        font-size: 16px;
+      }
+    }
+  }
+  &__copy-right {
+    background-color: @colorCopyRight;
+    font-size: @fontSize14;
+    line-height: 2.143;
+    & p {
+      .flex-display();
+
+      .full-center(center);
+      margin-top: 33px;
+      height: 50px;
+      color: @gray;
+      text-align: center;
+    }
+  }
+}

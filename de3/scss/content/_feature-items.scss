@@ -1,0 +1,394 @@
+.feature-items {
+  img {
+    width: 100%;
+    @media screen and (max-width: 1919px) {
+      // fill image which not 1920px
+      height: 100%;
+    }
+  }
+  .text-container {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    z-index: 1;
+    padding: 10px;
+    min-height: 22%;
+  }
+}
+
+.feature-item {
+  height: 100%;
+  position: relative;
+}
+
+.feature-item-1 {
+  @extend .feature-item;
+  .text-container {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    z-index: 1;
+    padding: 10px;
+    min-height: 22%;
+  }
+  .name {
+    @include line-clamp(2);
+    letter-spacing: 0.05em;
+    line-height: 1;
+    font-family: 'FiraSans';
+    color: $color-1;
+    text-align: center;
+    font-size: 34px;
+    @include at-sm {
+      font-size: 24px;
+    }
+    @include at-md {
+      font-size: 20px;
+    }
+    @include at-xl {
+      font-size: 24px;
+    }
+  }
+  .price {
+    line-height: 1;
+    font-family: 'CormorantGaramond-Bold';
+    color: $color-3;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.05em;
+    margin: 7% 0;
+    font-size: 34px;
+    @include at-sm {
+      font-size: 24px;
+    }
+    @include at-md {
+      font-size: 20px;
+    }
+    @include at-xl {
+      font-size: 24px;
+    }
+  }
+}
+
+.feature-item-2 {
+  @extend .feature-item;
+  // text- atom
+  .text__sale-up-to {
+    @include line-clamp(1);
+    font-family: 'FiraSans';
+    color: $color-1;
+    text-align: center;
+    letter-spacing: 0.2em;
+    font-size: 12px;
+    padding-top: 0px;
+    @include at-sm {
+      font-size: 18px;
+      padding-top: 0px;
+    }
+    @include at-md {
+      font-size: 12px;
+      padding-top: 0px;
+    }
+    @include at-lg {
+      font-size: 18px;
+      padding-top: 0px;
+    }
+    @include at-xl {
+      font-size: 18px;
+      padding-top: 0px;
+    }
+    @include at-xxl {
+      font-size: 18px;
+      padding-top: 10px;
+    }
+    @include at-fhd {
+      font-size: 18px;
+      padding-left: 10px;
+      padding-top: 33px;
+    }
+  }
+  .text__percent {
+    font-family: 'CormorantGaramond';
+    color: $color-1;
+    font-weight: bold;
+    text-align: center;
+
+    font-size: 40px;
+    margin-left: 4px;
+    @include at-sm {
+      font-size: 90px;
+      margin-left: 4px;
+    }
+    @include at-md {
+      font-size: 60px;
+      margin-left: 4px;
+    }
+    @include at-lg {
+      font-size: 70px;
+      margin-left: 4px;
+    }
+    @include at-xl {
+      font-size: 90px;
+      margin-left: 4px;
+    }
+    @include at-xxl {
+      font-size: 100px;
+      margin-left: 4px;
+    }
+    @include at-fhd {
+      font-size: 100px;
+      margin-left: 4px;
+    }
+  }
+  .text__title {
+    @include line-clamp(1);
+    font-family: 'CormorantGaramond-Bold';
+    color: $color-4;
+    font-weight: bold;
+    text-align: center;
+    // responsive
+    font-size: 9px;
+    margin-top: 10px;
+    margin-left: 4px;
+    @include at-sm {
+      font-size: 18px;
+      margin-top: 10px;
+      margin-left: 4px;
+    }
+    @include at-md {
+      font-size: 11px;
+      margin-top: 10px;
+      margin-left: 4px;
+    }
+    @include at-lg {
+      font-size: 15px;
+      margin-top: 10px;
+      margin-left: 4px;
+    }
+    @include at-xl {
+      font-size: 19px;
+      margin-top: 10px;
+      margin-left: 4px;
+    }
+    @include at-xxl {
+      font-size: 22px;
+      margin-top: 10px;
+      margin-left: 4px;
+    }
+    @include at-fhd {
+      font-size: 24px;
+      margin-top: 10px;
+      margin-left: 4px;
+    }
+  }
+  .text__shop-now {
+    text-decoration: none;
+    font-family: 'FiraSans-Bold';
+    color: $color-4;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.2em;
+    //layout
+
+    //
+    font-size: 10px;
+    @include at-sm {
+      font-size: 14px;
+      margin-bottom: 0px;
+      margin-left: 10px;
+    }
+    @include at-md {
+      font-size: 12px;
+      margin-bottom: 0px;
+      margin-left: 10px;
+    }
+    @include at-lg {
+      font-size: 14px;
+      margin-bottom: 0px;
+      margin-left: 10px;
+    }
+    @include at-xl {
+      font-size: 14px;
+      margin-bottom: 0px;
+      margin-left: 10px;
+    }
+    @include at-xxl {
+      font-size: 14px;
+      margin-bottom: 14px;
+      margin-left: 10px;
+    }
+    @include at-fhd {
+      font-size: 14px;
+      margin-bottom: 14px;
+      margin-left: 10px;
+    }
+  }
+  // class layout
+  .text-wrapper {
+    right: 5%;
+    top: 17%;
+    position: absolute;
+    width: 33.3%;
+    .text-container {
+      position: absolute;
+      padding: 10px;
+      top: 0;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+      .group-1 {
+        margin-top: -15px;
+        @include at-sm {
+          margin-top: -58px;
+        }
+        @include at-md {
+          margin-top: -35px;
+        }
+        @include at-lg {
+          margin-top: -35px;
+        }
+        @include at-xl {
+          margin-top: -58px;
+        }
+        @include at-xxl {
+          margin-top: -58px;
+        }
+        @include at-fhd {
+          margin-top: -58px;
+        }
+      }
+    }
+  }
+}
+
+.feature-item-3 {
+  @extend .feature-item;
+  .text-container {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding: 15px;
+    min-height: 22%;
+  }
+  .new-collection {
+    @include line-clamp(1);
+    font-family: 'FiraSans';
+    color: $color-1;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.2em;
+    // 320px
+    font-size: 15px;
+    margin-bottom: 20px;
+    @include at-md {
+      font-size: 10px;
+      margin-bottom: 9px;
+    }
+    @include at-xl {
+      margin-bottom: 18px;
+      margin-left: 0;
+      text-align: center;
+    }
+    @include at-xxl {
+      font-size: 14px;
+      margin-bottom: 18px;
+      margin-left: 0;
+      text-align: center;
+    }
+    @include at-fhd {
+      font-size: 14px;
+      margin-bottom: 18px;
+      margin-left: 36px;
+      text-align: left;
+    }
+  }
+  .left-ring {
+    @include line-clamp(1);
+    font-family: 'CormorantGaramond-Bold';
+    color: $color-3;
+    font-weight: bold;
+    // 320px
+    font-size: 52px;
+    margin-bottom: 40px;
+    text-align: center;
+    @include at-sm {
+      font-size: 36px;
+    }
+    @include at-md {
+      font-size: 30px;
+    }
+    @include at-xl {
+      margin-bottom: 44px;
+      font-size: 41px;
+    }
+    @include at-xxl {
+      margin-bottom: 44px;
+      font-size: 53px;
+    }
+    @include at-fhd {
+      margin-bottom: 45px;
+      font-size: 72px;
+    }
+  }
+}
+
+.feature-item-6 {
+  @extend .feature-item;
+  .text-container {
+    bottom: auto;
+    max-width: 250px;
+    top: 25%;
+    left: 5%;
+    @include at-xl {
+      max-width: 300px;
+    }
+  }
+  .text__ring-rose-gold {
+    @include line-clamp(2);
+    font-family: 'CormorantGaramond-Bold';
+    color: $color-1;
+    font-weight: bold;
+    line-height: 1.167;
+    text-align: left;
+    font-size: 28px;
+    @include at-sm {
+      font-size: 32px;
+    }
+    @include at-md {
+      font-size: 31px;
+    }
+    @include at-lg {
+      font-size: 36px;
+    }
+    @include at-xl {
+      font-size: 40px;
+    }
+    @include at-xxl {
+      font-size: 44px;
+    }
+    @include at-fhd {
+      font-size: 48px;
+    }
+  }
+  .text__rose-gold-plated {
+    @include line-clamp(2);
+    font-family: 'FiraSans';
+    color: $color-4;
+    letter-spacing: 0.05em;
+    line-height: 1.714;
+    text-align: left;
+    font-size: 11px;
+    @include at-sm {
+      font-size: 12px;
+    }
+    @include at-fhd {
+      margin-top: 20px;
+      margin-left: 5px;
+      font-size: 14px;
+    }
+  }
+}

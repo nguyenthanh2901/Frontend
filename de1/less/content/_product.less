@@ -1,0 +1,108 @@
+.products-list{
+    margin-bottom: 28px;
+    .title{
+        margin-bottom: 74px;
+        position: relative;
+        &::before{
+            content:'';
+            width: 50px;
+            height: 1px;
+            background-color: @main-color;
+            position: absolute;
+            left:0;
+            bottom: -24px;
+        }
+        .h2{
+            margin-top: 11px;
+        }
+    }
+    .product{
+        &-items{
+            width: calc( 100% / 12 * 3 );
+        }
+        &-inner{
+            margin-bottom: 43px;
+            .product-image{
+                position: relative;
+                display:flex;
+                img{
+                    width: 100%;
+                }
+                .btn-cart{
+                    position: absolute;
+                    left:5px;
+                    bottom: 5px;
+                    a{
+                        color: #424242;
+                        font-size: 12px;
+                        font-weight: 400;
+                        padding: 15px 20px 14px;
+                        background: #fff;
+                        text-transform: uppercase;
+                        display: block;
+                        &:hover{
+                            color: @main-color;
+                        }
+                    }
+                }
+            }
+            .product-title{
+                font-size: 14px;
+                line-height: 26px;
+                color:#000;
+                margin-top: 10px;
+            }
+            .product-review{
+                display: flex;
+                margin-top: 7px;
+                i{
+                    font-size: 13px;
+                    color:#f8ba04;
+                }
+            }
+            .product-price{
+                font-family:'OpenSans';
+                font-size: 16px;
+                line-height: 26px;
+                margin-top: 6px;
+                &-old{
+                    color:#999;
+                    font-weight: 400;
+                    text-decoration: line-through;
+                }
+                &-sale{
+                    color:@main-color;
+                    font-weight: 700; 
+                }
+            }
+        }
+    }
+}
+//// RESPONSIVE///////////////
+@media screen and ( max-width: 1024px) {
+    .products-list{
+        .product{
+            &-items{
+                width: calc( 100% / 12 * 3);
+            }
+        }
+    }
+}
+@media screen and ( max-width: 600px) {
+    .products-list{
+        .product{
+            &-items{
+                width: 50%;
+            }
+        }
+    }
+}
+@media screen and ( max-width: 480px) {
+    .products-list{
+        .product{
+            &-items{
+                width: 100%;
+            }
+        }
+    }
+}

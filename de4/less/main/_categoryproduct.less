@@ -1,0 +1,40 @@
+.category__product.grid.wide {
+  .product-items {
+    .flex-display;
+    .full-center(center);
+    flex-direction: column;
+
+    width: 100%;
+    max-width: 392px;
+    height: 250px;
+
+    transition: .1s;
+
+    box-shadow: 0 0 10px 0 @rgbaBlack06;
+    text-align: center;
+    background-color: @rgbwhite;
+  }
+
+  .product__dumbbells--img {
+    background: url('../img/categoryProduct/dubbells.png') center no-repeat;
+  }
+  .product__strength--img {
+    background: url('../img/categoryProduct/strength.png') center no-repeat;
+  }
+  .product__power--img {
+    background: url('../img/categoryProduct/power.png') center no-repeat;
+  }
+  .product__content--title {
+    margin: 19px 0;
+    line-height: 1.2;
+    font-size: @fontSize18;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .product__content--body {
+    margin-bottom: 4px;
+    max-width: 294px;
+    line-height: 1.714;
+    font-size: @fontSize14;
+  }
+}

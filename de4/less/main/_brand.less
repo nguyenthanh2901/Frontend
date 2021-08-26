@@ -1,0 +1,23 @@
+.brand {
+  border-top: 1px solid @gray;
+
+  & .row {
+    text-align: center;
+    align-items: center;
+    .full-center(center);
+    .brand__items{
+      height: 152px;
+      display: flex;
+      .flex-display;
+      .full-center(center);
+      img:hover {
+        filter: brightness(1.5);
+        cursor: pointer;
+  
+        transition: all .1s;
+        
+      }
+    }
+  }
+  
+}

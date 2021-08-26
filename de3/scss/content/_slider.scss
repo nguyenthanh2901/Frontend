@@ -1,0 +1,123 @@
+.slider {
+  background: url('images/bg.jpg') no-repeat;
+  background-size: cover;
+  background-position: 75% 25%;
+  // fix hover to social, a line will appear
+  overflow: hidden;
+  .container-big {
+    overflow: visible;
+  }
+}
+
+.slider-content {
+  max-width: 1460px;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-bottom: 30px;
+  min-height: 500px;
+  padding-top: 240px;
+  @include at-sm {
+    padding-top: 300px;
+  }
+  @include at-xxl {
+    min-height: 1000px;
+    padding-top: 342px;
+  }
+  &__group-1 {
+    display: flex;
+    justify-content: space-between;
+
+    .slider-heading {
+      .slider-date {
+        font-size: 16.339px;
+        font-family: 'FiraSans';
+        letter-spacing: 0.5em;
+        color: $color-4;
+        line-height: 1.333;
+        @include at-sm {
+          font-size: 20.339px;
+        }
+        @include at-lg {
+          font-size: 24.339px;
+        }
+      }
+      .slider-slogan {
+        font-size: 40px;
+        @include at-sm {
+          font-size: 60px;
+        }
+        @include at-lg {
+          font-size: 80px;
+        }
+        @include at-xxl {
+          font-size: 100px;
+        }
+        font-family: 'CormorantGaramond-SemiBoldItalic';
+        color: $color-1;
+        font-weight: bold;
+        font-style: italic;
+        text-transform: uppercase;
+        line-height: 1;
+        text-align: left;
+        letter-spacing: 0.3em;
+        margin-top: calc(75px - 42px);
+      }
+    }
+
+    .slider-socials {
+      display: flex;
+      flex-direction: column;
+      margin-top: 80px;
+      .social-item {
+        list-style: none;
+        a {
+          font-size: 13px;
+          font-family: 'CormorantGaramond-Medium';
+          color: $color-white;
+          line-height: 1.667;
+          text-align: right;
+          letter-spacing: 0.1em;
+          text-decoration: none;
+          color: $color-8;
+          display: flex;
+          align-items: center;
+          position: relative;
+          justify-content: flex-end;
+          transition: all 0.3s;
+          @include at-sm {
+            font-size: 16px;
+          }
+          @include at-lg {
+            font-size: 20px;
+          }
+          @include at-xxl {
+            font-size: 24px;
+          }
+        }
+        a:after {
+          content: '';
+          border-bottom: 2px solid #535353;
+          width: 150px;
+          height: 1px;
+          margin-left: 20px;
+          margin-right: calc(-150px - 20px);
+          opacity: 0;
+          transition: all 0.4s;
+          transform: translateX(100%);
+        }
+        a:hover {
+          color: $color-9;
+        }
+        a:hover:after {
+          color: $color-a1;
+          opacity: 1;
+          transform: translateX(0%);
+        }
+      }
+    }
+  }
+
+  .slider-btn-layout {
+    margin-top: 53px;
+  }
+}
